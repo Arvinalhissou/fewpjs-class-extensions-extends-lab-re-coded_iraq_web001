@@ -17,7 +17,7 @@ class Triangle extends Polygon{
     let side1 = this.sides[0]
     let side2 = this.sides[1]
     let side3 = this.sides[2]
-    if (this.count !== 3) {
+    if (this.sides.length !== 3) {
       return;
     }
     return ((side1 === side2) && (side1 === side3) && (side2 === side3))
@@ -30,7 +30,7 @@ class Square extends Polygon {
     let side2 = this.sides[1]
     let side3 = this.sides[2]
     let side4 = this.sides[3]
-    if (this.count !== 4) {
+    if (this.sides.length !== 4) {
       return;
     }
     return ((side1 === side2) && (side1 === side3) && (side2 === side3) && (side3 === side4))
