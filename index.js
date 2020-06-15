@@ -12,3 +12,8 @@ class Polygon {
     return this.sides.reduce((sum, currentSide) => sum + currentSide, 0)
   }
 }
+class Triangle extends Polygon {
+  get isValid(){
+    
+  }
+}
