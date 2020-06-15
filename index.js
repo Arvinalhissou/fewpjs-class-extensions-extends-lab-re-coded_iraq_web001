@@ -29,6 +29,7 @@ class Square extends Polygon {
     let side1 = this.sides[0]
     let side2 = this.sides[1]
     let side3 = this.sides[2]
+    let side4 = this.sides[3]
     if (this.count !== 4) {
       return;
     }
