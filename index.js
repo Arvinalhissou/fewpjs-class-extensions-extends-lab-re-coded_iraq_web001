@@ -13,10 +13,18 @@ class Polygon {
   }
 }
 class Triangle extends Polygon {
-  get isValid(){
-    
+    get isValid() {
+    let side1 = this.sides[0]
+    let side2 = this.sides[1]
+    let side3 = this.sides[2]
+    if (this.count !== 3) {
+      return;
+    }
+    return ((side1 === side2) && (side1 === side3) && (side2 === side3))
   }
 }
+}
+class Triangle extends Polygon {
 get area() {
     return this.sides[0] ** 2
   }
