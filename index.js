@@ -35,7 +35,6 @@ class Square extends Polygon {
     }
     return ((side1 === side2) && (side1 === side3) && (side2 === side3) && (side3 === side4))
   }
-}
 get area() {
     return this.sides[0] ** 2;
   }
